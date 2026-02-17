@@ -1,70 +1,27 @@
-🏛️ QANOUNI - LegalTech Maroc
+# 🏛️ QANOUNI - LegalTech Maroc
 
+**QANOUNI** est une plateforme d’Intelligence Artificielle dédiée à la démocratisation de l’accès au droit marocain. En s’appuyant sur la technologie de recherche augmentée (Grounding), l’application fournit des réponses sourcées, précises et vulgarisées à partir des textes officiels du Royaume.
 
-
-QANOUNI est une plateforme d'Intelligence Artificielle dédiée à la démocratisation de l'accès au droit marocain. En s'appuyant sur la technologie RAG (Retrieval-Augmented Generation), l'application fournit des réponses sourcées, précises et vulgarisées à partir des textes officiels du Royaume.
-
-
-
-🌟 Vision
-
-
-
+## 🌟 Vision
 Réduire la fracture juridique au Maroc en transformant le jargon législatif complexe en informations accessibles à tous, en Français et en Darija.
 
+## 🚀 État du Projet (v4.3 - Final)
+Le projet est actuellement dans sa version MVP (Minimum Viable Product) fonctionnelle.
+- **Moteur IA :** Gemini 2.5 Flash avec filtrage de domaines officiels (.gov.ma).
+- **Interface :** Web responsive (HTML/JS/Tailwind) avec export PDF.
+- **Déploiement :** Live sur GitHub Pages.
 
+## 📂 Structure du Repository
+- `index.html` : Interface utilisateur principale (Root).
+- `script.js` : Moteur de logique IA et gestion des exports PDF.
+- `docs/business/` : Documentation stratégique et dossier institutionnel.
+- `README.md` : Présentation du projet.
 
-🛠️ État du Projet (v2.3)
+## 🛠️ Installation Locale
+1. Clonez le dépôt :
+   \`\`\`bash
+   git clone https://github.com/Ayoublahrech/qanouni-project.git
+   \`\`\`
+2. Ouvrez \`index.html\` dans votre navigateur.
 
-
-
-Le projet est actuellement en phase de développement du MVP (Minimum Viable Product).
-
-
-
-Cahier des charges : Finalisé (v2.0)
-
-
-
-Spécifications Techniques : Validées (v2.3)
-
-
-
-Architecture : Hybride Client-Middleware avec filtrage de domaines officiels (.gov.ma).
-
-
-
-📁 Structure du Repository
-
-
-
-/frontend : Interface utilisateur Web (HTML/JS/Tailwind).
-
-
-
-/middleware : Logique de contrôle, audit et proxy API (Serverless).
-
-
-
-/docs : Documentation stratégique et technique complète.
-
-
-
-🚀 Installation Locale
-
-
-
-Clonez le dépôt : git clone https://github.com/ayoublahrech/qanouni-project.git
-
-
-
-Configurez votre clé API Gemini dans un fichier .env.
-
-
-
-Lancez frontend/index.html via un serveur local (ex: Live Server).
-
-
-
-Ce projet est une initiative visant à soutenir la stratégie Maroc Digital 2030.
-
+Ce projet est une initiative visant à soutenir la stratégie **Maroc Digital 2030**.
