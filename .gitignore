@@ -1,0 +1,14 @@
+# Secrets et Clés API (CRITIQUE)
+.env
+config.js
+
+# Dépendances Node.js
+node_modules/
+dist/
+.cache/
+
+# Fichiers système et Logs
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
