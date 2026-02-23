@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000';  // Retirons le /api
+// Utilise une variable d'environnement, ou localhost en développement
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 export const sendMessage = async (message, userId = 'anonymous') => {
   try {
-    // Essayons d'abord la route DeepSeek qui fonctionne
     const response = await axios.post(`${API_URL}/api/chat-deepseek`, {
       message,
       userId
