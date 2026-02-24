@@ -1,11 +1,10 @@
 import axios from 'axios';
 
-// Utilise une variable d'environnement, ou localhost en développement
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = 'https://determined-education-production-e2a4.up.railway.app';
 
 export const sendMessage = async (message, userId = 'anonymous') => {
   try {
-    const response = await axios.post(`${API_URL}/api/chat-deepseek`, {
+    const response = await axios.post(`${API_URL}/api/chat`, {
       message,
       userId
     });
