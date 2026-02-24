@@ -27,6 +27,13 @@ app.get('/debug-env', (req, res) => {
     // On ne renvoie pas la clé elle-même par sécurité !
   });
 });
+app.get('/debug-env-all', (req, res) => {
+  res.json({
+    NODE_ENV: process.env.NODE_ENV,
+    hasGeminiKey: !!process.env.GEMINI_API_KEY,
+    envKeys: Object.keys(process.env).filter(key => !key.includes('KEY') && !key.includes('SECRET'))
+  });
+});
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur http://localhost:${PORT}`);
   console.log(`- Gemini: /api/chat`);
