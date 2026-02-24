@@ -1,14 +1,16 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const cors = require('cors');
 
-dotenv.config();
+// Ne charge dotenv qu'en développement
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes Gemini (uniquement)
+// Routes Gemini
 const chatRoutes = require('./routes/chatRoutes');
 app.use('/api/chat', chatRoutes);
 
